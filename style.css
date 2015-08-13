@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-div {
     margin: 0 auto;
     max-width: 1280px;
-    min-width: 200px;
+    min-width: 300px;
 }
 
 .header-div {
@@ -70,21 +70,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu {
-    clear: left;
-    float: left;
+    display: table;
     font-family: ProximaNovaExCn-Light;
     font-size: 16px;
-    left: 50%;
-    margin-top: 40px;
+    margin: 40px auto 0;
     list-style: none;
-    position: relative;
 }
 
 .menu li {
     float: left;
     margin-right: 25px;
-    right: 50%;
-    position: relative;
 }
 
 .menu li a {
@@ -166,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     margin-left: 15px;
     text-decoration: none;
-    padding: 5px;
+    padding: 5px 20px 5px 5px;
 }
 
 .catalog-menu ul li img {
@@ -284,11 +279,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
     .paginator ul {
-        clear: left;
-        float: left;
-        left: 50%;
         list-style: outside none none;
-        position: relative;
+        display: inline-block;
+        margin: 0 auto;
     }
 
     .paginator ul li {
@@ -297,8 +290,6 @@ h1, h2, h3, h4, h5, h6 {
         border-top: 1px solid #e5e5e5;
         float: left;
         list-style: outside none none;
-        position: relative;
-        right: 50%;
     }
 
     .paginator ul li:first-child {
@@ -410,6 +401,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
 }
 
+.footer-left-center {
+    display: inline-block;
+}
+
 .footer-menu {
     list-style: none;
     overflow: hidden;
@@ -422,6 +417,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-menu li a {
     color: #737262;
     display: inline-block;
+    line-height: 0.8em;
     margin-left: 15px;
     padding: 3px;
     text-decoration: none;
@@ -448,4 +444,159 @@ h1, h2, h3, h4, h5, h6 {
 .footer-right-div p a {
     color: #4d4f4d;
     //text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+    .search {
+        padding: 0 5%;
+        width: 88%;
+    }
+
+    .search-btn {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    .menu-logo {
+        float: initial;
+        width: initial;
+    }
+
+    .menu-div {
+        float: initial;
+        width: initial;
+    }
+
+    .menu-info {
+        float: right;
+        margin: 15px 15px 0 0;
+        width: initial;
+    }
+
+    .carousel-caption {
+        font-size: 20px !important;
+        top: 20% !important;
+    }
+
+    .search {
+        padding: 0 5%;
+        width: 88%;
+    }
+
+    .search-btn {
+        margin-top: 5px;
+    }
+
+    .footer-menu li {
+        float: initial;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+    .menu-logo {
+        float: initial;
+        width: initial;
+    }
+
+    .menu-div {
+        float: initial;
+        width: initial;
+    }
+
+    .menu-info {
+        float: right;
+        margin: 15px 15px 0 0;
+        width: initial;
+    }
+
+    .carousel-caption {
+        font-size: 16px !important;
+        top: 0 !important;
+    }
+
+    .catalog-menu {
+        width: 45%;
+    }
+
+    .content-container {
+        width: 52%
+    }
+
+    .search {
+        padding: 0 5%;
+        width: 88%;
+    }
+
+    .search-btn {
+        margin-top: 5px;
+    }
+
+    .footer-menu li {
+        float: initial;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 479px) {
+    .menu-logo {
+        float: initial;
+        width: initial;
+    }
+
+    .menu-div {
+        float: initial;
+        width: initial;
+    }
+
+    .menu li {
+        float: initial;
+        text-align: center;
+    }
+
+    .menu li.active a {
+        border-top: none;
+        color: #98A450;
+    }
+
+    .menu-info {
+        display: table;
+        float: initial;
+        margin: 15px auto;
+        text-align: center;
+        width: initial;
+    }
+
+    .carousel-caption {
+        font-size: 16px !important;
+        top: 0 !important;
+        width: 100%;
+    }
+
+    .catalog-menu {
+        width: 100%;
+    }
+
+    .content-container {
+        margin-top: 30px;
+        width: 97%
+    }
+
+    .search {
+        padding: 0 5%;
+        width: 88%;
+    }
+
+    .search-btn {
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+    .news-item {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .footer-menu li {
+        float: initial;
+    }
 }
